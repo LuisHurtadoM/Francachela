@@ -137,6 +137,14 @@
   }
   
 @media screen and (max-width: 767px) {
+  .inicio{
+    width: 700px;
+    height: 534px;
+    background-image: url('./images/index1.jpg');
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    padding-top: 20px;
+  }
   .res {
     margin-left: 0%;/
   }
