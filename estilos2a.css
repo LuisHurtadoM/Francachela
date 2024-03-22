@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Montserrat";
+  color: #0000cc;
   margin: 0;
   padding: 0;
 }
@@ -9,12 +10,12 @@ nav.row{
   margin-left: 20px;
   height: 50px;
   width: 100%;
-  background-color: rgba(51,51,51);
+  /* background-color: rgba(51,51,51); */
   
 }
 .column {
   float: left;
-  width: 50%;
+  width: 40%;
   padding: 10px;
 }
 .row::after {
@@ -43,35 +44,42 @@ nav.row{
 .col-12 {width: 100%;}
 
 body{
-  background-color: rgb(255, 255, 153);
+  background-color:#ffc40c;
   margin-top: 0px;
+  height: 600px;
 }
-.inicio{
+/* .inicio{
   width: 800px;
   height: 534px;
   background-image: url('./images/resta.jpg');
   background-repeat: no-repeat;
   margin-left: 250px;
   padding-top: 20px;
-}
+} */
 .navegacion ul{
   padding-top: 15px;
   list-style-type: none;
 }
+.principal{
+  margin: 0 auto;
+  max-width: 55%;
+  max-height: 45%;
+}
+
 .navegacion a{
   text-decoration: none;
-  color: rgb(255, 255, 150);
+  color: rgb(28, 28, 13);
   font-weight: bold;
   
 }
 .navegacion a:hover{
-  color: rgb(153, 102, 255);
+  color: rgb(65, 11, 171);
   text-decoration: underline;
   font-weight: bold;
   
 }
 .navegacion a:visited{
-  color: rgb(204, 204, 0);
+  color: rgb(204, 0, 99);
   font-weight: bold;
 }
 .navegacion a:active{
@@ -90,25 +98,292 @@ body{
   
 }
 .identificador img{
-  width: 30px;
-  height: 30px;
+  width: 120px;
+  height: 100px;
   position: relative;
-  bottom: -5px;
+  bottom: -15px;
+  left: -50px;
 }
 .identificador h1,
-.identificador h5,
 .identificador p{
   margin: 0;
   border: 0;
 }
+
 .identificador .col-12 h1,
 .identificador .col-12 h5{
   text-align: center;
-  background-color: rgba(18, 47, 216, 0.5);
+  color: #ffc40c;
+  background-color: #0e0a4ddb;
+}
+.identificador .col-12 h5{
+  
+  padding-top: 0;
+  padding-left: 120px;
+  padding-bottom: 15px;
+  
+}
+.radio {
+  display: flex;
+}
+
+.radio input[type="radio"] {
+  margin-right: 5px; /* Ajusta el espaciado entre los radio buttons */
+}
+
+
+
+.enlace .flex-container {
+  display: flex;
+  flex-direction: row; /* Cambiamos la dirección principal a columna */
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 90%;
+  
+  margin-left: 7.5%; 
+}
+
+.enlace > .desayunos{
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  width: 86%;
+  height: 350px;
+  
+  align-items: center; /* Alinea verticalmente */
+  justify-content: center;
+  margin-left: 9.5%;
+}
+
+/* .enlace > div a{
+  margin-top: 150px;
+  text-decoration: none;
+  color: inherit; 
+  width: 100%; 
+  height: 100%;
+}
+.enlace .desayunos span{
+  margin-top: 350px;
+  
+  width: 100%;
+  background-color: #0e0a4d95;
+} */
+
+
+.desayunos > a {
+  display: block;
+  text-decoration: none; /* Quita el subrayado del enlace */
+  color: inherit; /* Hereda el color del texto del padre */
+  width: 100%; /* Ocupa todo el ancho del div */
+  height: 100%; /* Ocupa todo el alto del div */
+  align-content: center;
+}
+
+.desayunos span {
+  display: block; /* Hacer que el span ocupe todo el ancho del enlace */
+  margin-top: 0px;
+  width: 100%;
+  background-color: #0e0a4d95;
+  color: #ffc40c; /* Color de texto */
+  font-weight: 600; /* Grosor de la fuente */
+  text-align: center; /* Centrar el texto */
+  position: relative; /* Establecer posición relativa */
+  z-index: 2; /* Asegurar que esté encima del fondo del enlace */
+  line-height: 1;
+}
+
+
+
+.enlace span{
+  align-items: center;
+  align-content: center;
+}
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  width: 47%;
+  height: 350px; 
+}
+.gallery {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px; */
+  display: flex; /* Hace que las imágenes se distribuyan horizontalmente */
+  flex-wrap: wrap; /* Permite que las imágenes se envuelvan a la siguiente fila si no caben en una sola fila */
+  justify-content: center; /* Centra las imágenes horizontalmente dentro del contenedor */
+  gap: 10px;
+}
+
+.gallery img {
+  /* width: 100%;
+  height: auto; */
+  max-width: 100%;
+}
+.flex-container {
+  display: flex;
+  justify-content: center; /* Alinea horizontalmente */
+  align-items: center; /* Alinea verticalmente */
+  flex-wrap: wrap;
+}
+.nosotros1{
+  width: 1200px;
+  height: 300px;
+  background-image: url('./images/BackNosotros2.png');
+  background-repeat: no-repeat;
+  
+}
+
+
+
+/* Estilo para cada div dentro del contenedor */
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  width: 47%;
+  height: 350px;
+  display: flex;
+  align-items: center; /* Alinea verticalmente */
+  justify-content: center; /* Alinea horizontalmente */
+}
+
+
+/* Estilo para el span dentro de cada div */
+.flex-container > div span {
+  display: inline-block; /* Añade display: inline-block para que las propiedades de alineación funcionen */
+  text-align: center; /* Alinea el texto horizontalmente */
+  line-height: 1; /* Restablece la altura de línea para centrar verticalmente el texto */
+}
+
+/* Estilo para el enlace dentro de cada div */
+.flex-container > div a {
+  text-decoration: none; /* Quita el subrayado del enlace */
+  color: inherit; /* Hereda el color del texto del padre */
+  width: 100%; /* Ocupa todo el ancho del div */
+  height: 100%; /* Ocupa todo el alto del div */
+}
+
+
+
+ .tapas{
+  text-align: center;
+  margin-top: 150px;
+  background-image: url('./Imagenes2/pulpo.jpg');
+  background-repeat: no-repeat;
+} 
+/* .flag {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  
+}
+.flag div.col-1{
+  padding: 0px;
+  margin: 0px;
+  
+}
+.flag img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: -35px;
+  
+} */
+
+.flag {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.flag img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 5px rgba(52, 23, 107, 0.5);
+}
+
+.flag img:not(:last-child) {
+  margin-right: -25px; /* Espacio entre los iconos */
+}
+
+
+
+
+.ensaladas{
+  text-align: center;
+  margin-top: 150px;
+  background-image: url('./Imagenes2/ensalada.jpg');
+  background-repeat: no-repeat;
+}
+
+.platos{
+  text-align: center;
+  margin-top: 150px;
+  background-image: url('./Imagenes2/receta-de-calamares-con-patatas.jpeg');
+  background-repeat: no-repeat;
+}
+
+.sandwiches{
+  text-align: center;
+  margin-top: 150px;
+  background-image: url('./images/sandwich.png');
+  background-repeat: no-repeat;
+}
+.enlace .flex-container span{
+  margin-top: 150px;
+  width: 100%;
+  background-color: #0e0a4d95;
+}
+.hamburguesas{
+  text-align: center;
+  margin-top: 150px;
+  background-image: url('./Imagenes2/hamburguesa.jpg');
+  background-repeat: no-repeat;
+}
+.bocata1{
+  text-align: center;
+  margin-top: 150px;
+  background-image: url('./images/bocata.jpeg');
+  background-repeat: no-repeat;
+}
+.bocata2{
+  text-align: center;
+  margin-top: 150px;
+  background-image: url('./images/bocata2.jpeg');
+  background-repeat: no-repeat;
+}
+.desayunos{
+  text-align: center;
+  margin-top: 150px;
+  background-image: url('./images/desayuno.jpeg');
+  background-repeat: no-repeat;
 }
 .menu{
   margin-left: 20px;
   border: 1px dashed darkred;
+}
+.menuitem{
+  margin-left: 120px;
+}
+.menuitem button img{
+  width: 10px;
+  height: 10px;
+  
+  background-color: #f1f1f100;
+}
+button{
+  margin-left: 10px;
+}
+.menuitem li{
+  font-weight: bold;
+  color: RGB(0, 0, 192);
 }
 .menu .column{
   border: 1px dashed darkred;
@@ -139,30 +414,67 @@ body{
   background-color: rgb(153, 102, 255);
 }
 
-@media screen and (max-width: 767px) {
-.res {
-  margin-left: 0%;/
+section.res{
+  align-items: center;
+  align-content: center;
 }
+
+@media screen and (max-width: 767px) {
+  .inicio{
+    width: 350px;
+    height: 534px;
+    background-image: url('./images/index1.jpg');
+    background-repeat: no-repeat;
+    margin-left: 40px;
+    padding-top: 20px;
+  }
+  .res {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    width: 100%;
+  }
+  .flex-container > div {
+    background-color: #f1f1f1;
+    /* margin: 30%; */
+    padding: 20px;
+    font-size: 30px;
+    width: 100%;
+     
+  }
 }
 
 
 @media screen and (min-width: 768px) {
-.res {
-  margin-left: 25%; 
-
-}
+  .res {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    width: 100%;
+  }
 }
 
 
 
 
 .reserva {
-display: flex;
+  display: flex;
 flex-direction: row;
 justify-content: space-between;
 margin-left: 20px;
 height: 450px;
 }
+
+
+/* .reserva {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-left: 20px;
+height: 450px;
+} */
 .reserva .radio {
   margin-left: 5px;
 }
@@ -202,31 +514,80 @@ cursor: pointer;
 
 }
 .nosotros{
-margin-left: 20px;
-padding-left: 10px;
+  font-weight: bold;
+  margin-left: 20px;
+  padding-left: 10px;
+  text-align: center;
+  
+  
+ }
+ .nosotros > * {
+  display: inline-block;
+  margin: 0 auto;
 }
+ .nosotros img{
+  padding: 20px;
+  display: flex;
+  width: 25%;
+  margin: 0 auto;
+  border-radius: 50%;
+ }
 
 .nosotros p{
-text-indent: 20px;
-line-height: 2;
+  text-indent: 20px;
+  line-height: 2;
 }
-.nosotros .col-12{
-margin: 0;
-padding: 0;
-text-align: center;
 
+
+.nosotros .col-12{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
 }
 .nosotros .col-12 img{
-width: 60px;
-height: 50px;
-margin: 0;
-padding: 0;
-text-align: center;
+  width: 60px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.mapcontainer {
+  margin: 0 auto; /* Centra horizontalmente el contenedor */
+  width: 90%; /* Establece el ancho del contenedor al 90% */
+  max-width: 800px; /* Establece un ancho máximo para el contenedor */
+  
+}
+.video {
+  max-width: 720px; /* Establece el ancho máximo del contenedor del video */
+  margin: 0 auto !important; /* Centra horizontalmente el contenedor */
+}
+
+.video iframe {
+  width: 600px; /* Ocupa todo el ancho disponible del contenedor */
+  height: 300px; /* Mantiene la proporción original del video */
+  margin: auto !important;
 }
 .reserva button[type="submit"]:hover {
 background-color: #0056b3;
 }
-
+.mapa {
+  width: 100%;
+  margin-left: 10%;
+ 
+ 
+  padding: 0;
+  border: 0;
+  align-content: center;
+}
+.mapa iframe {
+  
+  width:85%; /* Ocupa todo el ancho disponible del contenedor */
+  height: auto; 
+}
+iframe{
+  align-content: center;
+}
 .ubicacion{
   margin-left: 20px;
 }
