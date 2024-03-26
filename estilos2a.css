@@ -421,11 +421,11 @@ section.res{
     padding-top: 20px;
   }
   .identificador img{
-    width: 120px;
-    height: 100px;
+    width: 80px;
+    height: 60px;
     position: relative;
     bottom: -15px;
-    left: -25px;
+    left: -35px;
   }
   
   .flag .col-1 {
